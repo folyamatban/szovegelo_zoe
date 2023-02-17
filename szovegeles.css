@@ -1,0 +1,87 @@
+body{
+    background-image: radial-gradient(aqua,rgb(9, 186, 209),rgb(45, 149, 247),darkblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.nav-link{
+    color:black;
+
+}
+main{
+    margin: auto;
+}
+.login{
+    float: right;
+    grid-area: l;
+    width: 60px;
+    height: 60px;
+    margin:0;
+}
+article{
+    margin: auto;
+    background-color: rgb(251, 240, 225);
+    color: black;
+    width: 80%;
+    max-width: 1500px;
+    height: auto;
+    border: 20px;
+    display: grid;
+    grid-template-areas:"u l"
+                        "ad ad"
+                        "a a" ;
+}
+input,label{
+    margin-top: 20px;
+}
+input{
+    padding: 5px;
+    margin-bottom: 5px;
+    margin: 10px;
+}
+fieldset{
+    border: 1px black solid;
+    margin: 15px;
+    padding: 15px;
+}
+
+.udito{
+    margin: 10px;
+    grid-area: u;
+    border: 0;
+    padding: 10px;
+}
+.adat{
+    margin: 10px;
+    padding: 10px;
+    grid-area: ad;
+}
+.gomb{
+    text-align: center;
+    background-color: bisque;
+}
+.allat{
+    margin: 10px;
+    grid-area: a;
+    padding: 10px;
+}
+.kuldes{
+    margin: auto;
+    padding: 10px;
+    background-color: bisque;
+}
+@media screen and (max-width:600px) {
+    article{
+        height: auto;
+        grid-template-areas:"l"
+                            "u"
+                            "ad"
+                            "a" 
+                            ;
+    }
+    .login{
+        margin: 5px;
+        padding: 10px;
+        height: auto;
+    }
+}
