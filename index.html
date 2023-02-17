@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Berta Zoé Anna,Szövegelő</title>
+    <link rel="stylesheet" href="szovegeles.css" />
+  </head>
+  <body>
+    <main>
+      <header></header>
+
+      <nav>
+        <div class="container mt-3">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#home"
+                >kezdőlap</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#menu1"
+                >Hr-osztály</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#menu2">Pénzügy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#menu3"
+                >szervező</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="tab" href="#menu4"
+                >Szövegelő</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      <article>
+        <div class="login">
+          <form action="#">
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" /><br />
+            <label for="pwd">Password:</label><br />
+            <input type="password" id="pwd" name="pwd" /><br>
+            <input class="gomb" type="Bejelentkezés" value="Bejelentkezés" />
+          </form>
+        </div>
+        <form action="#" method="get">
+          <div class="adat">
+          <fieldset>
+            <legend>Adatok</legend>
+            <label for="vNev">Vezetéknév:</label>
+            <input
+              type="text"
+              id="vNev"
+              placeholder="Szabó"
+              name="vezeteknev"
+            />
+            <br />
+            <label for="kNev">Keresztnév:</label>
+            <input type="text" id="kNev" placeholder="Anna" name="keresztnev" />
+            <br />
+            <label for="email">Add meg az email címed:</label>
+            <input type="email" id="email" name="email" />
+          </fieldset>
+        </div>
+          <div class="udito">
+            <fieldset>
+          <h2>Mi a kedvenc üdítőd?</h2>
+          <input type="radio" id="Cola name="fav_language" value="Cola" />
+          <label for="html">Cola</label><br />
+          <input type="radio" id="Fanta" name="fav_language" value="Fanta" />
+          <label for="css">Fanta</label><br />
+          <input type="radio" id="IceTea" name="fav_language" value="Ice Tea" />
+          <label for="javascript">Ice Tea</label><br>
+          <input type="radio" id="Víz" name="fav_language" value="Víz" />
+          <label for="javascript">Víz</label>
+        </fieldset>
+        </div>
+        <div class="allat">
+        <fieldset>
+          <h3>Turul vagy Csodaszarvas?</h3>
+          <input type="radio" id="Turul" name="fav_language" value="Turul" />
+          <label for="javascript">Turul</label>
+          <input
+            type="radio"
+            id="Csodaszarvas"
+            name="fav_language"
+            value="Csodaszarvas"
+          />
+          <label for="javascript">Csodaszarvas</label><br>
+        </fieldset>
+          <input class="kuldes" type="submit" value="Küldés" />
+        </div>
+        </form>
+      </article>
+
+      <footer></footer>
+    </main>
+  </body>
+</html>
